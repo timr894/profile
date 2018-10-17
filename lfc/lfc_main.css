@@ -1,0 +1,332 @@
+
+body{
+  margin:0;
+  padding:0;
+}
+
+
+.navbar{
+  display: flex;
+}
+
+.stack{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.header_one{
+  text-align: -webkit-right;
+}
+.navbar-toggler{
+  align-self: flex-end;
+}
+.navbar-toggler-icon{
+  background-color: #ffffff;
+}
+.navbar-light  .navbar-toggler{
+    border-color:  white;
+
+}
+.header .navbar-text.lfc_green{
+  color: #30bb9b;
+}
+.navbar-light .navbar-nav .active>.nav-link{
+  color: #2b7e6b;
+}
+.navbar-light .navbar-nav .nav-link{
+  color: #30bb9b;
+}
+h6{
+  color: #30bb9b;
+}
+.main-bg{
+  width: 100%;
+  opacity: .5;
+}
+
+.jumbotron{
+  padding: 0;
+  margin: 0 0 0 0;
+  border-radius: 0;
+  background-color: #e07979;
+}
+@media only screen and (min-width: 701px){
+  #img-1{display: block;}
+  #img-2{display: none;}
+}
+@media only screen and (max-width: 700px){
+  #img-1{display: none;}
+  #img-2{display: block;}
+}
+
+/*start of roster css */
+.roster{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #f9f9f9;
+  flex-wrap: nowrap;
+
+}
+.r-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  padding: 20px;
+  width:auto;
+  margin: 3em;
+}
+.roster-header{
+  display: flex;
+  justify-content: center;
+  color: #e31b23;
+}
+
+.roster-photo .img-fluid{
+  max-width: 100%;
+  height: auto;
+  width: 250px;
+}
+
+.roster-name{
+  display: flex;
+  justify-content: center;
+}
+.roster-bio{
+  display: flex;
+  justify-content: center;
+}
+.r-box p{
+  margin: 1rem;
+}
+.roster-bio .bio-button{
+  background-color: #e31b23;
+  border: none;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+}
+
+.roster-bio .bio-button:after {
+	right: -28px;
+    border-left: 28px solid ;
+    border-bottom: 28px solid transparent;
+    border-top: 28px solid transparent;
+    content: "";
+    display: inline-block;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    width: 0;
+    color: #e31b23;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+a:not([href]):not([tabindex]) {
+    color: white;
+    text-decoration: none;
+}
+
+.closeBtn{
+  color:#ccc;
+  float: right;
+  font-size: 30px;
+  padding-right: 10px;
+}
+.closeBtn:hover,.closeBtn:focus{
+  color: #000;
+  text-decoration: none;
+}
+/* roster pop up code*/
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+
+.popup .popuptext {
+
+    width: 300px;
+    background-color: #555;
+    color: #fff;
+    text-align: justify;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -150px;
+    font-size: small;
+}
+@media (min-width: 496px){.popup .popuptext {
+    visibility: hidden;
+    width: 400px;
+    background-color: #555;
+    color: #fff;
+    text-align: justify;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -200px;
+    font-size: small;
+  }}
+
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+/* new popup toggle */
+
+.newtext{
+  display: none;
+  width: 300px;
+  background-color: #555;
+  color: #fff;
+  text-align: justify;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -150px;
+  font-size: small;
+}
+
+.goalie{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.defenders{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.midfield{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.forwards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+/* Start of Schedule page*/
+.schedule-main{
+  background-image: url(btb.jpg);
+  display: block;
+}
+
+.schedule-list-main{
+  display: flex;
+  flex-wrap: wrap;
+}
+.schd-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f6f8f9;
+  border-bottom-style: double;
+  border-bottom-color: lightslategray;
+}
+.schd1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+.schd-block:nth-child(odd){
+  background-color: #dedede;
+}
+
+.schd1-left{
+  justify-content: flex-start;
+}
+.schd1-right{
+  justify-content: flex-Start;
+
+}
+
+.schd2{
+  display: none;
+
+}
+.schd2-outter{
+  display: flex;
+}
+.schd2-left{
+  display: inline-block;
+  justify-content: flex-start;
+  max-width: 50%;
+  height:
+}
+.schd2-right{
+  display: inline-block;
+  justify-content: flex-end;
+}
+.toggleBtn{
+  color:#b5b5b5;
+  float: right;
+  font-size: 30px;
+  bottom: 0;
+}
+.toggleBtn:hover, .toggleBtn:focus{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.schd-logos{
+
+}

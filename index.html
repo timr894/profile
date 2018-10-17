@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-http-equiv="X-UA-Compatible" content="ie=edge">
+      <title> practice </title>
+      <link rel="stylesheet" href="style.CSS">
+      <script>
+        // get modal element
+        var modal = document.getElementById('simpleModal');
+        // Get open modal button
+        var modalBtn = document.getElementById('modalBtn');
+        // Get close button
+        var closeBtn = document.getElementsByClassName('closeBtn')[0];
+
+        // listen for click
+        modalBtn.addEventListener('click', openModal);
+
+        // listen for close click
+        closeBtn.addEventListener('click', closeModal);
+
+        //funciton to open modal
+        function openModal(){
+          modal.style.display = 'block';
+        }
+
+        // funciton to close modalBtn
+        function closeModal(){
+          modal.style.display = 'none';
+        }
+
+      </script>
+  </head>
+  <body>
+    <button id="modalBtn" class="button"> full bio</button>
+
+      <div id="simpleModal" class="modal">
+        <div class="modal-content">
+          <span class="closeBtn">&times;</span>
+          <p>Im a modal</p>
+      </div>
+    </div>
+
+  </body>
+
+</html>

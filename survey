@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="title">Survey Time</h1>
+      <div>
+      <p id="description">Here we're going to take a short survery to find what it is that you like! <br/>
+        Scroll down to fill in your answers.
+      </p>
+    </div>
+    <form action="" method="post" id="survery-form">
+      <div class="entry">
+          <h3>Name:</h3><input type="text" name="name" id="name" placeholder="Your Name">
+      </div>
+      <div class="entry">
+        <h3>Email:</h3><input type="email" name="email" id="email" placeholder="your@email.com">
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <input type="submit" name="submit">
+    </form>
+    </div>
+  </body>
+</html>

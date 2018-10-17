@@ -1,0 +1,26 @@
+body{
+  background: linear-gradient(0.5turn, #efa5a5, #e04f4f, #000000);
+}
+
+.body_main{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.header-s{
+display: flex;
+justify-content: center;
+background-color: whitesmoke;
+width: -webkit-fill-available;
+}
+.sub-head{
+  display: flex;
+  justify-content: center;
+}
+.survey-holder{
+  background-color: #dcd6d3;
+  padding: 1em;
+}
+li{
+  list-style-type: none;
+}

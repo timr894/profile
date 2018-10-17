@@ -1,0 +1,152 @@
+.main-lg{
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+}
+.left-lg{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+background-color: #021042;
+height: 100vh;
+width: 25%;
+
+}
+
+.profile-photo-lg{
+  width: 120px;
+  border-radius: 20%;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #3d3d40;
+
+
+}
+.nav{
+  padding-bottom: 100px;
+}
+.nav-link{
+  color: white;
+}
+.nav-link:hover{
+  color: #beccf7;
+}
+.link-top{
+  padding-top: 20px;
+}
+
+.right-lg{
+  display: flex;
+  background-color: #f3f3fb;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+  width: -webkit-fill-available;
+  padding-left: 30px;
+}
+.name-lg{
+  display: flex;
+  flex-direction: column;
+
+
+}
+.header-name-lg{
+  color: black;
+  font-family: impact;
+}
+.header-name-2-lg{
+  color: #062cb3;
+  font-family: impact;
+}
+.email-link-lg{
+  color: #062cb3;
+}
+.about-lg{
+  display: flex;
+  flex-direction: column;
+  
+}
+.body-text-lg{
+  color: #5E5E5E;
+}
+
+
+/*
+Mobile view css
+*/
+}
+.container-fluid{
+  padding: 0px;
+}
+.main-sm{
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+@media only screen and (min-width: 701px){
+  .main-lg{display: flex;}
+  .main-sm{display: none;}
+}
+@media only screen and (max-width: 700px){
+  .main-lg{display: none;}
+  .main-sm{display: block;}
+
+.left-sm{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #021042;
+  height: fit-content;
+  width: 100%;
+
+}
+.profile-photo-sm{
+ opacity: .8;
+ border-radius: 50%;
+ padding: 5px;
+
+}
+
+.btn-secondary{
+  color: #fff;
+  background-color: #062cb3;
+    border-color: #6c757d;
+    opacity: 0.8;
+}
+.right-sm{
+  display: flex;
+  background-color: #f3f3fb;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.name-sm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px 20px 0px;
+}
+.header-name{
+  color: black;
+  font-family: impact;
+}
+.header-name-2{
+  color: #062cb3;
+  font-family: impact;
+}
+.email-link{
+  color: #062cb3;
+}
+.about-sm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+}
+.body-text{
+  color: #5E5E5E;
+}

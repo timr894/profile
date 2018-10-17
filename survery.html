@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <link rel="stylesheet" href="survery_style.css">
+  </head>
+  <body>
+
+
+
+
+
+    <div class="body_main">
+      <div class="header-s">
+        <h1 id="title">Survey Time</h1>
+      </div>
+
+      <div class="sub-head">
+      <p id="description">Here we're going to take a short survery to find what it is that you like! <br/>
+        Scroll down to fill in your answers.
+      </p>
+    </div>
+    <div class="survey-holder">
+    <form action="" method="post" id="survery-form">
+      <div class="entry">
+          <h3 id="name-label">Name: </h3><input type="text" name="name" id="name" placeholder="Your Name">
+      </div>
+      <div class="entry">
+        <h3 id="email-label">Email: </h3><input type="email" name="email" id="email" placeholder="your@email.com">
+      </div>
+      <div class="entry">
+        <h3 id="number-label">Age:</h3><input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+      </div>
+      <div class="entry">
+        <h3 id="dropdown-label"> What is your favorite sport?</h3>
+        <select name="faveorite sport" id="dropdown" class="dropdown">
+          <option disabled selected value>Pick a sport</option>
+          <option value="football">Football</option>
+          <option value="baseball">Baseball</option>
+          <option value="basketball">Basketball</option>
+          <option value="hockey">Hockey</option>
+          <option value="soccer">Soccer</option>
+        </select>
+      </div>
+
+    <div class="entry">
+      <h3 id="radio-label">Rate yourself as a fan:</h3>
+      <ul id="radio">
+        <li>
+          <label>
+
+            <input name="radio-buttons" value="1" type="radio" class="userRatings">
+              "Hardcore"
+          </label>
+        </li>
+        <li>
+          <label>
+
+            <input name="radio-buttons" value="2" type="radio" class="userRatings">
+            "Solid but nothing over the top"
+          </label>
+        </li>
+        <li>
+          <label>
+
+            <input name="radio-buttons" value="3" type="radio" class="userRatings">
+            "Mediocre"
+          </label>
+          <li>
+            <label>
+              <input name="radio-buttons" value="4" type="radio" class="userRatings">
+              "I try and know when my team plays"
+
+            </label>
+          </li>
+        </li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <h3 id="checkbox-label">Which of these teams will win a championship this year?</h3>
+      <ul>
+        <li>
+          <input name="prefer" value="1" type="checkbox" class="userRatings"> New England Patriots
+        </li>
+
+        <li>
+          <input name="prefer" value="2" type="checkbox" class="userRatings"> Boston Red Sox
+        </li>
+
+        <li>
+          <input name="prefer" value="3" type="checkbox" class="userRatings"> Golden State Wariors
+        </li>
+
+        <li>
+          <input name="prefer" value="4" type="checkbox" class="userRatings"> Pittsburgh Penguins
+        </li>
+
+        <li>
+          <input name="prefer" value="5" type="checkbox" class="userRatings"> Liverpool FC
+        </li>
+
+        <li>
+          <input name="prefer" value="6" type="checkbox" class="userRatings"> None of them
+        </li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <h3 id="comments-label">What other thoughts do you have?</h3>
+      <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+    </div>
+
+        <br>
+      <input id="submit-button" type="submit" name="submit">
+
+    </form>
+
+    </div>
+  </body>
+</html>
